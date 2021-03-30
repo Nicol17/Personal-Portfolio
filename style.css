@@ -7,9 +7,13 @@
     padding: 0;
 }
 
+textarea {
+    resize: none;
+    }
+
 /* NAVBAR*/
 
-li, a, button {
+#navigation li, #navigation a, #navigation button {
     font-family: 'Permanent Marker', cursive;
     font-weight: 500;
     font-size: 18px;
@@ -33,21 +37,21 @@ header {
     list-style: none;
 }
 
-li {
+#navigation li {
     display: inline-block;
     padding: 0 20px;
 }
 
-a {
+#navigation a {
     transition: all .3s ease 0s;
 }
 
-a:hover {
+#navigation a:hover {
     font-size: 30px;
     font-weight: 600;
 }
 
-button {
+#navigation button {
     padding: 9px 25px;
     background-color: #000;
     color: #fff;
@@ -57,7 +61,7 @@ button {
     transition: all .3s ease 0s;
 }
 
-button:hover {
+#navigation button:hover {
     color: #000;
     background-color: #fff;
     transform: scale(1.5);
@@ -207,6 +211,91 @@ svg {
         transition: all .35s;
     }
 
+    /* MY PROJECTS */
+
+    #projects {
+        margin: 100px;
+    }
+
+    .projects-title {
+        text-align: center;
+        letter-spacing: 1px;
+        font-family: 'Rock Salt', cursive;
+        margin-bottom: 100px;
+    }
+
+    .projects-title h3 {
+        font-size: 64px;
+    }
+
+    .cards-container {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .cards-container .card {
+        width: 20%;
+        padding: 20px 15px;
+        border: 2px solid #000;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.5);
+        transition: .5s ease-in-out;
+    }
+
+    .cards-container .card .project-img {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        left: 50px;
+
+    }
+
+    .cards-container .card .project-img img {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+
+    .cards-container .card .content {
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s ease-in-out;
+    }
+
+    .cards-container .card:hover .content {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 20px;
+        transition-delay: .3s;
+    }
+
+    .card h3 {
+        font-size: 32px;
+        font-weight: 750;
+        font-family: 'Rock Salt', cursive;
+    }
+
+    .projectbtn {
+        text-decoration: none;
+        color: #000;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .projectbtn:hover {
+        color: #fff;
+        background-color: #000;
+    }
 
     /* CONTACT ME */
 
@@ -230,6 +319,7 @@ svg {
         margin: 0 auto;
         /* background: rgba(0, 0, 0, 0.8); */
         padding: 30px;
+        padding-bottom: 65px;
         border-radius: 5px;
         display: flex;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -257,7 +347,7 @@ svg {
     }
 
     .message textarea {
-        height: 70%;
+        height: 81%;
     }
 
     ::-webkit-input-placeholder {
@@ -284,6 +374,16 @@ svg {
         color: #000;
         background-color: #fff;
         transform: scale(1.25);
+    }
+
+    .input-fields label, .message label {
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    #name, #email, #subject, .message textarea {
+        margin-top: 0;
+        padding-top: 0;
     }
 
     @media screen and (max-width: 600px) {
