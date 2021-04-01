@@ -509,7 +509,7 @@ footer p, footer img {
         max-width: 80%;
     }
 
-    /*THIS NEEDS TO BE CENTERED*/ 
+    /*THIS NEEDS TO BE CENTERED */ 
     #footer .footer-container .copyright {
         display: flex;
         justify-content: center;
