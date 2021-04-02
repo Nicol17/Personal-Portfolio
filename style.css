@@ -136,9 +136,9 @@ top: 30%;
     }
 
     .caption {
-        font-size: 1.8rem;
+        font-size: 25px;
         text-align: center;
-        line-height: 2em;
+        line-height: 60px;
         font-family: 'Special Elite';
         color: #fff;
     }
@@ -212,6 +212,7 @@ top: 30%;
 
     .cards-container .card {
         width: 20%;
+        /* height: 60vh; */
         margin: 20px;
         padding: 20px 15px;
         border: 2px solid #000;
@@ -429,10 +430,11 @@ footer p, footer img {
 
 /* RESPONSIVENESS */ 
 
-/* HERO */
-
-@media only screen and (max-width: 700px) {
-
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 736px)
+{
+    /* HERO */
     #hero .handwriting {
         height: 80vh;
     }
@@ -509,6 +511,10 @@ footer p, footer img {
         max-width: 80%;
     }
 
+    #contact .btn {
+        width: 35%;
+    }
+
     /*THIS NEEDS TO BE CENTERED */ 
     #footer .footer-container .copyright {
         display: flex;
@@ -516,3 +522,113 @@ footer p, footer img {
     }
 }
 
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px) {
+
+    /* HERO */
+    #hero .handwriting {
+        height: 75vh;
+    }
+
+    #hero .handwriting h1, #hero .handwriting h3 {
+        font-size: 72px;
+    }
+
+    /* ABOUT */
+    
+    #about .about-text h3 {
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
+
+    #about .item {
+        filter: none;
+    }
+
+    #about .item .caption {
+        font-size: 15px;
+        line-height: 40px;
+    } 
+
+    /* PROJECTS */
+
+    #projects {
+        margin: 50px 20px;
+    }
+
+    #projects .projects-title {
+        margin-bottom: 30px;
+    }
+
+    .projects-title h3 {
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
+
+    .cards-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+    }
+
+    .cards-container .card {
+        width: 40%;
+        height: 70vh;
+        margin: 10px;
+        padding: 10px 10px;
+    }
+
+    .cards-container .project-img {
+        width: 50%;
+        height: 30%;
+    }
+
+    /* .cards-container .saraoPic {
+        height: 130%;
+    } */
+
+    .card h3 {
+        font-size: 26px;
+    }
+
+
+    .cards-container .card .hover-div .content {
+        margin-top: 65px;
+        vertical-align: bottom;
+        visibility: visible;
+        opacity: 1;
+        align-items: flex-end;
+        height: 22vh;
+    }
+
+
+    .cards-container .card a {
+        vertical-align: bottom;
+    }
+
+
+    /* CONTACT */
+
+    #contact {
+        margin: 50px auto;
+    }
+
+    .contact-title {
+        margin-bottom: 50px;
+    }
+
+    .contact-title h3 {
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
+
+    .contact-form {
+        max-width: 80%;
+    }
+
+    #contact .btn {
+        width: 35%;
+    }
+  }
