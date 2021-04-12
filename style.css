@@ -114,6 +114,7 @@ top: 30%;
 .about-text p {
     line-height: 1.5;
     letter-spacing: 1px;
+    font-size: 20px;
 }
 
 /* ABOUT GALLERY*/
@@ -212,7 +213,6 @@ top: 30%;
 
     .cards-container .card {
         width: 20%;
-        /* height: 60vh; */
         margin: 20px;
         padding: 20px 15px;
         border: 2px solid #000;
@@ -237,20 +237,26 @@ top: 30%;
         border-radius: 4px;
     }
 
+    .cards-container .card .hover-div {
+        /* height: 50vh; */
+    }
+
     .cards-container .card .hover-div .content {
         margin-top: -200px;
+        height: 20vh;
         padding: 10px 15px;
         text-align: center;
         visibility: hidden;
         opacity: 0;
-        transition: .5s ease-in-out;
+        transition: .7s ease-in-out;
     }
 
     .cards-container .card .hover-div:hover .content {
         visibility: visible;
         opacity: 1;
-        margin-top: 60px;
+        margin-top: 0px;
         transition-delay: .3s;
+        height: 30vh;
     }
 
     .card h3 {
@@ -258,6 +264,13 @@ top: 30%;
         font-weight: 750;
         font-family: 'Rock Salt', cursive;
     }
+
+    /* .project-buttons {
+        height: 25vh;
+        align-items: center;
+        justify-content: center;
+        vertical-align: bottom;
+    } */
 
     .projectbtn {
         text-decoration: none;
@@ -268,7 +281,10 @@ top: 30%;
         padding: 5px;
         margin: 5px;
         font-size: 20px;
+        vertical-align: bottom;
+        
     }
+
 
     .projectbtn i {
         padding-right: 10px;
@@ -458,6 +474,31 @@ and (max-device-width: 736px)
         flex-direction: column;
     }
 
+    /**/
+
+    #about .caption {
+        font-size: 30px;
+        line-height: 20px;
+    }
+    
+
+    #about .item {
+        width: 70%;
+        display: inline-block;
+        margin-top: 2rem;
+        filter: none;
+    }
+
+    /**/
+
+    #about #disapear {
+        display: none;
+    }
+
+    #about #disapear2 {
+        display: none;
+    }
+
 
     #about .item .caption span {
         font-size: 16px;
@@ -477,14 +518,24 @@ and (max-device-width: 736px)
     #projects .projects-title h3 {
         font-size: 48px;
         line-height: 65px;
+        text-align: center;
     }
 
     .cards-container {
         justify-content: center;
     }
 
-    .cards-container .card {
-        width: 75%;
+    #projects .cards-container .card {
+        width: 85%;
+    }
+
+    #projects .cards-container .project-img {
+        width: 70%;
+        height: 70%;
+    }
+
+    #projects  .cards-container .project-img h3 {
+        text-align: center;
     }
 
     .cards-container .card .hover-div .content {
@@ -492,6 +543,7 @@ and (max-device-width: 736px)
         text-align: center;
         visibility: visible;
         opacity: 1;
+        height: 32vh;
     }
 
     #contact {
@@ -523,7 +575,7 @@ and (max-device-width: 736px)
 }
 
 @media only screen 
-  and (min-device-width: 834px) 
+  /* and (min-device-width: 834px)  */
   and (max-device-width: 1112px) {
 
     /* HERO */
@@ -544,6 +596,31 @@ and (max-device-width: 736px)
 
     #about .item {
         filter: none;
+        margin-left: 50px;
+    }
+
+    /**/
+
+    #about .caption {
+        font-size: 55px;
+        line-height: 20px;
+    }
+    
+
+    #about .item {
+        width: 35%;
+        filter: none;
+    }
+
+    /**/
+
+    #about #disapear {
+        display: none;
+    }
+
+    .polaroid img {
+        max-width: 100%;
+        height: auto;
     }
 
     #about .item .caption {
@@ -595,12 +672,12 @@ and (max-device-width: 736px)
 
 
     .cards-container .card .hover-div .content {
-        margin-top: 65px;
+        margin-top: 130px;
         vertical-align: bottom;
         visibility: visible;
         opacity: 1;
         align-items: flex-end;
-        height: 22vh;
+        height: 8vh;
     }
 
 
