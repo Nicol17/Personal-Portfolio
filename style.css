@@ -531,19 +531,19 @@ and (max-device-width: 736px)
 
     #projects .cards-container .project-img {
         width: 70%;
-        height: 70%;
+        height: 50%;
     }
 
     #projects  .cards-container .project-img h3 {
         text-align: center;
     }
 
-    .cards-container .card .hover-div .content {
-        margin-top: 20px;
+    #projects .cards-container .card .hover-div .content {
+        margin-top: 40px;
         text-align: center;
         visibility: visible;
         opacity: 1;
-        height: 32vh;
+        height: 30vh;
     }
 
     #contact {
@@ -575,7 +575,7 @@ and (max-device-width: 736px)
 }
 
 @media only screen 
-  /* and (min-device-width: 834px)  */
+  and (min-device-width: 737px) 
   and (max-device-width: 1112px) {
 
     /* HERO */
@@ -652,7 +652,7 @@ and (max-device-width: 736px)
 
     .cards-container .card {
         width: 40%;
-        height: 70vh;
+        height: 63vh;
         margin: 10px;
         padding: 10px 10px;
     }
@@ -672,16 +672,16 @@ and (max-device-width: 736px)
 
 
     .cards-container .card .hover-div .content {
-        margin-top: 130px;
+        margin-top: 70px;
         vertical-align: bottom;
         visibility: visible;
         opacity: 1;
         align-items: flex-end;
-        height: 8vh;
+        height: 25vh;
     }
 
 
-    .cards-container .card a {
+    .cards-container .card .projectbtn {
         vertical-align: bottom;
     }
 
