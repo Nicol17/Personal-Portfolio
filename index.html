@@ -19,7 +19,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <a class="cv" href="#"><button>Get my CV</button></a>
+            <a class="cv" href="files/NicoasLluesaCV.pdf" download><button>Get my CV</button></a>
         </header>
 
         <section id="hero">
@@ -85,7 +85,7 @@
                             <h3>Oasis</h3>
                         </div>
                         <div class="content">
-                            <p>Application designed for meditation and relaxing purposes using sounds and film, the App includes time selection, a countdown and a multitude of venues to pick, with a final "gong" that determines the end of the session.<br><br><strong>Coded using HTML, CSS & Vanilla Javascript.</strong></p>
+                            <p>Application designed for meditation and relaxing purposes using sounds and film, the App includes time selection, a countdown and a multitude of venues to pick, with a final "gong" that determines the end of the session.<br><br><strong>Coded using HTML, CSS, Javascript & AWS Storage.</strong></p>
                     </div>
                 </div>
                             <a class="projectbtn" target=”_blank” href="https://fervent-engelbart-a4dd13.netlify.app"><i class="fas fa-globe-europe"></i>Website</a>
@@ -151,6 +151,7 @@
                 <h3>Send me an Email!</h3>
             </div>
             <div class="contact-container">
+                <form action="" class="contactForm">
                 <div class="contact-form">
                     <div class="input-fields">
                         <label for="name">Name</label>
@@ -163,10 +164,11 @@
                     <div class="message">
                         <label for="message">Message</label>
                         <textarea id="message"></textarea>
-                            <div class="btn">Send!</div>
+                            <button type="submit" class="btn">Send!</button>
 
                     </div>
                 </div>
+            </form>
             </div>
         </section>
 
@@ -184,6 +186,7 @@
             </div>
         </footer>
         
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
