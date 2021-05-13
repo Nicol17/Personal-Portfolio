@@ -428,6 +428,10 @@ footer p, footer img {
     color: #fff;
 }
 
+footer a {
+    color: #fff;
+}
+
 .footer-container {
     margin: auto;
     padding: 0 20px;
