@@ -14,10 +14,8 @@ function submitForm(e) {
     const message = document.querySelector("#message").value;
 
     console.log(name, email, subject, message);
-
-    form.reset();
-
     sendEmail(name, email, subject, message);
+    form.reset();
 }
 
 
@@ -27,7 +25,7 @@ function sendEmail(name, email, subject, message) {
     Email.send({
         Host: "smtp.gmail.com",
         Username: 'nicolaslluesa17@gmail.com',
-        Password: "qmyoitvqdquurbsu",
+        Password: "hddtcglecdivlzax",
         To: 'nicolaslluesa17@gmail.com',
         From: "nicolaslluesa17@gmail.com",
         Subject: `${name} sent you a message`,
