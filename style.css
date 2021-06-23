@@ -429,11 +429,11 @@ top: 30%;
 
 .card__button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 20px 30px;
   color: white;
   border: 1px solid white;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-transition: .3s;
@@ -616,17 +616,25 @@ footer a {
 }
 
 /* RESPONSIVENESS */
-@media only screen and (min-device-width: 375px) and (max-device-width: 736px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 736px) {
   /* NAVBAR */
-  .logo {
+  .logo, .logoDiv {
     display: none;
   }
+  #navigation {
+    padding: 10px;
+  }
+  #navigation nav ul li {
+    margin: 0;
+    padding: 0;
+  }
   #navigation nav ul li a, #navigation button {
-    font-size: 20px;
+    font-size: 15px;
+    padding: 5px;
   }
   /* HERO */
   #hero .handwriting {
-    height: 80vh;
+    height: 90vh;
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
   }
@@ -634,7 +642,8 @@ footer a {
     font-size: 64px;
   }
   #about .about-text {
-    width: 80%;
+    width: 90%;
+    font-size: 20px;
   }
   #about .about-text h3 {
     font-size: 48px;
@@ -662,10 +671,7 @@ footer a {
             filter: none;
   }
   /**/
-  #about #disapear {
-    display: none;
-  }
-  #about #disapear2 {
+  #about #disapear, #about #disapear2 {
     display: none;
   }
   #about .item .caption span {
@@ -679,6 +685,17 @@ footer a {
   #projects .projects-title h3 {
     font-size: 40px;
     letter-spacing: 3px;
+  }
+  #projects .card__title {
+    font-size: 28px;
+  }
+  #projects .card__button {
+    padding: 5px;
+    margin-top: 130px;
+  }
+  #projects .card__snippet {
+    max-height: 250px;
+    overflow: visible;
   }
   /* CONTACT */
   #contact {

@@ -23,9 +23,7 @@ function submitForm(e) {
 
 function sendEmail(name, email, subject, message) {
     Email.send({
-        Host: "smtp.gmail.com",
-        Username: 'nicolaslluesa17@gmail.com',
-        Password: "hddtcglecdivlzax",
+        SecureToken: '396a2cae-aa2c-4c3e-be46-9094321e0a32',
         To: 'nicolaslluesa17@gmail.com',
         From: "nicolaslluesa17@gmail.com",
         Subject: `${name} sent you a message`,
