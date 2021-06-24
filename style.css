@@ -210,8 +210,8 @@ nav {
 
 #about .polaroid img {
   max-width: 100%;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -770,10 +770,6 @@ footer a {
   /**/
   #about #disapear {
     display: none;
-  }
-  .polaroid img {
-    max-width: 100%;
-    height: auto;
   }
   #about .item .caption {
     font-size: 15px;

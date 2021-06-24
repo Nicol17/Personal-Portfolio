@@ -190,8 +190,8 @@ top: 30%;
 
     #about .polaroid img {
         max-width: 100%;
-        width:  400px;
-        height: 400px;
+        width:  350px;
+        height: 350px;
         object-fit: cover;
     }
 
@@ -758,11 +758,6 @@ and (max-device-width: 736px)
 
     #about #disapear {
         display: none;
-    }
-
-    .polaroid img {
-        max-width: 100%;
-        height: auto;
     }
 
     #about .item .caption {
