@@ -695,6 +695,9 @@ footer a {
   #projects {
     margin: 50px 20px;
   }
+  #projects .projects-title {
+    margin-bottom: 30px;
+  }
   #projects .projects-title h3 {
     font-size: 40px;
     letter-spacing: 3px;
