@@ -680,7 +680,7 @@ footer a {
   #about #disapear, #about #disapear2 {
     display: none;
   }
-  .polaroid img {
+  #about .polaroid img {
     width: 250px;
     height: 250px;
   }
