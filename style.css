@@ -647,7 +647,8 @@ footer a {
   }
   #hero .staticHandwriting h1, #hero .staticHandwriting h3 {
     font-size: 64px;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
+    font-weight: 500;
   }
   #about .about-text {
     width: 90%;
