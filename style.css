@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  src: url(fonts/Have\ Heart\ One);
-  font-family: 'Have Heart One';
+  src: url(fonts/HaveHeartOne.ttf);
+  font-family: 'HaveHeartOne';
 }
 
 * {
@@ -99,26 +99,28 @@ nav {
 }
 
 /*HERO*/
-/* .handwriting {
-    width: 100%;
-    text-align: center;
-    height: 90vh;
-    position: relative;
+.staticHandwriting {
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  position: relative;
+  display: none;
 }
 
-#hero h1 {
-font-family: 'Have Heart One';
-font-size: 200px;
-position: relative;
-top: 25%;
+#hero .staticHandwriting h1 {
+  font-family: 'HaveHeartOne';
+  font-size: 200px;
+  position: relative;
+  top: 25%;
 }
 
-#hero h3 {
-font-family: 'Have Heart One';
-font-size: 100px;
-position: relative;
-top: 30%;
-} */
+#hero .staticHandwriting h3 {
+  font-family: 'HaveHeartOne';
+  font-size: 100px;
+  position: relative;
+  top: 30%;
+}
+
 .handwriting {
   width: 100%;
   height: 100vh;
@@ -208,7 +210,10 @@ top: 30%;
 
 .polaroid img {
   max-width: 100%;
-  height: auto;
+  width: 450px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .caption {
@@ -634,11 +639,12 @@ footer a {
   }
   /* HERO */
   #hero .handwriting {
-    height: 90vh;
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    display: none;
   }
-  #hero .handwriting h1, #hero .handwriting h3 {
+  #hero .staticHandwriting {
+    display: block;
+  }
+  #hero .staticHandwriting h1, #hero .staticHandwriting h3 {
     font-size: 64px;
   }
   #about .about-text {
@@ -673,6 +679,10 @@ footer a {
   /**/
   #about #disapear, #about #disapear2 {
     display: none;
+  }
+  .polaroid img {
+    width: 250px;
+    height: 250px;
   }
   #about .item .caption span {
     font-size: 16px;
@@ -752,6 +762,10 @@ footer a {
     width: 35%;
     -webkit-filter: none;
             filter: none;
+  }
+  #about .polaroid img {
+    width: 300px;
+    height: 300px;
   }
   /**/
   #about #disapear {

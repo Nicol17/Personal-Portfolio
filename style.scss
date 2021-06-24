@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    src: url(fonts/Have\ Heart\ One);
-    font-family: 'Have Heart One';
+    src: url(fonts/HaveHeartOne.ttf);
+    font-family: 'HaveHeartOne';
 }
 
 * {
@@ -93,26 +93,28 @@ nav {
 
 /*HERO*/
 
-/* .handwriting {
+.staticHandwriting {
     width: 100%;
     text-align: center;
     height: 90vh;
     position: relative;
+    display: none;
 }
 
-#hero h1 {
-font-family: 'Have Heart One';
+#hero .staticHandwriting h1 {
+font-family: 'HaveHeartOne';
 font-size: 200px;
 position: relative;
 top: 25%;
 }
 
-#hero h3 {
-font-family: 'Have Heart One';
+#hero .staticHandwriting h3 {
+font-family: 'HaveHeartOne';
 font-size: 100px;
 position: relative;
 top: 30%;
-} */
+} 
+
 .handwriting {
     width: 100%;
     height: 100vh;
@@ -188,7 +190,9 @@ top: 30%;
 
     .polaroid img {
         max-width: 100%;
-        height: auto;
+        width:  450px;
+        height: 450px;
+        object-fit: cover;
     }
 
     .caption {
@@ -582,6 +586,7 @@ and (max-device-width: 736px)
     #navigation nav ul li a, #navigation button {
         font-size: 15px;
         padding: 5px;
+    //     display: block;
     }
     
 
@@ -589,11 +594,14 @@ and (max-device-width: 736px)
 
     /* HERO */
     #hero .handwriting {
-        height: 90vh;
-        transform: scale(1.40);
+        display: none;
     }
 
-    #hero .handwriting h1, #hero .handwriting h3 {
+    #hero .staticHandwriting {
+        display: block;
+    }
+
+    #hero .staticHandwriting h1, #hero .staticHandwriting h3 {
         font-size: 64px;
     }
 
@@ -632,6 +640,11 @@ and (max-device-width: 736px)
 
     #about #disapear, #about #disapear2 {
         display: none;
+    }
+
+    .polaroid img {
+        width:  250px;
+        height: 250px;
     }
 
     #about .item .caption span {
@@ -734,6 +747,11 @@ and (max-device-width: 736px)
     #about .item {
         width: 35%;
         filter: none;
+    }
+
+    #about .polaroid img {
+        width:  300px;
+        height: 300px;
     }
 
     /**/
