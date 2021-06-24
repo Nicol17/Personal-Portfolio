@@ -599,10 +599,12 @@ and (max-device-width: 736px)
 
     #hero .staticHandwriting {
         display: block;
+        width: 95%;
     }
 
     #hero .staticHandwriting h1, #hero .staticHandwriting h3 {
         font-size: 64px;
+        letter-spacing: 3.5px;
     }
 
     #about .about-text {
