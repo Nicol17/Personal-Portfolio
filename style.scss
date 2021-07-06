@@ -308,6 +308,10 @@ top: 30%;
             .card__snippet {
                 margin: 20px 0;
             }
+
+            .card__image {
+                filter: grayscale(15%);
+            }
         }
     
         &__thumb {

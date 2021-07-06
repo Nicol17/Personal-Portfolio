@@ -338,6 +338,11 @@ nav {
   margin: 20px 0;
 }
 
+.card:hover .card__image {
+  -webkit-filter: grayscale(15%);
+          filter: grayscale(15%);
+}
+
 .card__thumb {
   position: relative;
   max-height: 400px;
